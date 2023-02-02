@@ -11,12 +11,12 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/qdm12/xcputranslate/internal/dashes"
-	"github.com/qdm12/xcputranslate/internal/docker"
-	"github.com/qdm12/xcputranslate/internal/golang"
-	"github.com/qdm12/xcputranslate/internal/models"
-	"github.com/qdm12/xcputranslate/internal/sleep"
-	"github.com/qdm12/xcputranslate/internal/uname"
+	"github.com/kbuley/xcputranslate/internal/dashes"
+	"github.com/kbuley/xcputranslate/internal/docker"
+	"github.com/kbuley/xcputranslate/internal/golang"
+	"github.com/kbuley/xcputranslate/internal/models"
+	"github.com/kbuley/xcputranslate/internal/sleep"
+	"github.com/kbuley/xcputranslate/internal/uname"
 )
 
 //nolint:gochecknoglobals

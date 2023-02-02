@@ -1,6 +1,6 @@
 package golang
 
-import "github.com/qdm12/xcputranslate/internal/docker"
+import "github.com/kbuley/xcputranslate/internal/docker"
 
 func Translate(dockerPlatform docker.Platform) (arch, arm string) {
 	arch = string(dockerPlatform.Arch)

@@ -1,6 +1,6 @@
 package uname
 
-import "github.com/qdm12/xcputranslate/internal/docker"
+import "github.com/kbuley/xcputranslate/internal/docker"
 
 func Translate(dockerPlatform docker.Platform) (arch string) {
 	switch dockerPlatform.Arch {

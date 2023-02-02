@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/qdm12/xcputranslate/internal/docker"
+	"github.com/kbuley/xcputranslate/internal/docker"
 	"github.com/stretchr/testify/assert"
 )
 

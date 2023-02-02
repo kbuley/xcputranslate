@@ -1,4 +1,4 @@
-module github.com/qdm12/xcputranslate
+module github.com/kbuley/xcputranslate
 
 go 1.19
 

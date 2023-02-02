@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/qdm12/xcputranslate/internal/docker"
+	"github.com/kbuley/xcputranslate/internal/docker"
 )
 
 func Sleep(ctx context.Context, dockerPlatform docker.Platform,
