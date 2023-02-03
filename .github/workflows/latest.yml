@@ -45,10 +45,11 @@ jobs:
       - name: Set variables
         id: vars
         run: |
-          echo ::set-output name=commit::$(git rev-parse --short HEAD)
-          echo ::set-output name=build_date::$(date -u +%Y-%m-%dT%H:%M:%SZ)
-          echo ::set-output name=version::${GITHUB_REF#refs/tags/}
-          echo ::set-output name=platforms::linux/amd64,linux/386,linux/arm64,linux/arm/v6,linux/arm/v7,linux/s390x,linux/ppc64le,linux/riscv64
+          echo "commit=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+          echo "build_date=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> $GITHUB_OUTPUT
+          echo "version=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+          echo "platforms=linux/amd64,linux/386,linux/arm64,linux/arm/v6,linux/arm/v7,linux/s390x,linux/ppc64le,linux/riscv64" >> $GITHUB_OUTPUT
+
       - name: Build and push image
         uses: docker/build-push-action@v4.0.0
         with:
